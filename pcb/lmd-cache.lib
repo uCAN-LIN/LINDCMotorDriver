@@ -1,0 +1,343 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# conn:Conn_01x03
+#
+DEF conn:Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "conn:Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# conn:Conn_01x04
+#
+DEF conn:Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "conn:Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# conn:Conn_01x05
+#
+DEF conn:Conn_01x05 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "conn:Conn_01x05" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 50 -250 1 1 10 f
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:C_Small
+#
+DEF device:C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "device:C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:D_Small
+#
+DEF device:D_Small D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "device:D_Small" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:Jumper_NC_Dual
+#
+DEF device:Jumper_NC_Dual JP 0 30 Y N 1 F N
+F0 "JP" 50 -100 50 H V L CNN
+F1 "device:Jumper_NC_Dual" 0 100 50 H V C BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -60 10 64 386 1413 0 1 0 N -10 50 -110 50
+A 60 10 64 386 1413 0 1 0 N 110 50 10 50
+C -120 0 35 0 1 0 N
+C 0 0 36 0 1 0 N
+C 120 0 35 0 1 0 N
+X 1 1 -250 0 95 R 50 50 0 1 P
+X 2 2 0 -100 60 U 50 50 0 1 P
+X 3 3 250 0 95 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# device:R_Small
+#
+DEF device:R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "device:R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# interface:TJA1028
+#
+DEF interface:TJA1028 U 0 40 Y Y 1 F N
+F0 "U" 0 50 50 H V C CNN
+F1 "interface:TJA1028" 400 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 0 0 450 -450 0 1 0 f
+X VBAT 1 -200 -100 200 R 50 50 1 1 W
+X EN 2 -200 -200 200 R 50 50 1 1 B
+X GND 3 -200 -300 200 R 50 50 1 1 W
+X LIN 4 -200 -400 200 R 50 50 1 1 B
+X RXD 5 650 -400 200 L 50 50 1 1 B
+X TXD 6 650 -300 200 L 50 50 1 1 B
+X RSTN 7 650 -200 200 L 50 50 1 1 B
+X VCC 8 650 -100 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# power:+12P
+#
+DEF power:+12P #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:+12P" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12P 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:+3.3V
+#
+DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:GND
+#
+DEF power:GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:GNDA
+#
+DEF power:GNDA #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GNDA" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# texas:DRV8848
+#
+DEF texas:DRV8848 U 0 40 Y Y 1 F N
+F0 "U" -200 200 50 H V C CNN
+F1 "texas:DRV8848" 400 -800 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 150 450 -750 0 1 0 f
+S 450 -750 450 -750 0 1 0 N
+X nSLEEP 1 -400 50 200 R 50 50 1 1 B
+X BIN2 10 650 -550 200 L 50 50 1 1 B
+X VREF 11 650 -450 200 L 50 50 1 1 B
+X VM 12 650 -350 200 L 50 50 1 1 W
+X GND 13 650 -250 200 L 50 50 1 1 W
+X VINT 14 650 -150 200 L 50 50 1 1 W
+X AIN2 15 650 -50 200 L 50 50 1 1 B
+X AIN1 16 650 50 200 L 50 50 1 1 B
+X AOUT1 2 -400 -50 200 R 50 50 1 1 B
+X AISEN 3 -400 -150 200 R 50 50 1 1 B
+X AOUT2 4 -400 -250 200 R 50 50 1 1 B
+X BOUT2 5 -400 -350 200 R 50 50 1 1 B
+X BISEN 6 -400 -450 200 R 50 50 1 1 B
+X BOUT1 7 -400 -550 200 R 50 50 1 1 B
+X nFAULT 8 -400 -650 200 R 50 50 1 1 B
+X BIN1 9 650 -650 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# ucan:PIC16(L)F15323
+#
+DEF ucan:PIC16(L)F15323 U 0 40 Y Y 1 F N
+F0 "U" -350 650 50 H V C CNN
+F1 "ucan:PIC16(L)F15323" 550 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 600 500 -300 0 1 0 f
+X VDD 1 -500 450 200 R 50 50 1 1 I
+X RC0 10 700 50 200 L 50 50 1 1 I
+X RA2 11 700 150 200 L 50 50 1 1 I
+X RA1/ICSCLK 12 700 250 200 L 50 50 1 1 I
+X ICSDAT 13 700 350 200 L 50 50 1 1 I
+X VSS 14 700 450 200 L 50 50 1 1 I
+X RA5 2 -500 350 200 R 50 50 1 1 I
+X RA4 3 -500 250 200 R 50 50 1 1 I
+X VPP/MCLR 4 -500 150 200 R 50 50 1 1 I
+X RC5 5 -500 50 200 R 50 50 1 1 I
+X RC4 6 -500 -50 200 R 50 50 1 1 I
+X RC3 7 -500 -150 200 R 50 50 1 1 I
+X RC2 8 700 -150 200 L 50 50 1 1 I
+X RC1 9 700 -50 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ucan:TLE493D
+#
+DEF ucan:TLE493D U 0 40 Y Y 1 F N
+F0 "U" -150 300 50 H V C CNN
+F1 "ucan:TLE493D" 300 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -150 250 350 -150 0 1 0 f
+X SCL 1 -350 150 200 R 50 50 1 1 I
+X GND 2 -350 50 200 R 50 50 1 1 I
+X GND 3 -350 -50 200 R 50 50 1 1 I
+X SDA 4 550 150 200 L 50 50 1 1 I
+X GND 5 550 50 200 L 50 50 1 1 I
+X VDD 6 550 -50 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# ucan:conn:Conn_01x04
+#
+DEF ucan:conn:Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "ucan:conn:Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
