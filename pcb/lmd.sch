@@ -144,7 +144,7 @@ F 1 "Conn_01x03" H 8020 5316 50  0001 C CNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-3_P5.00mm" H 8100 5550 50  0001 C CNN
 F 3 "~" H 8100 5550 50  0001 C CNN
 	1    8100 5550
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L interface:TJA1028 U2
@@ -463,7 +463,7 @@ $EndComp
 Wire Wire Line
 	8650 2100 8950 2100
 Wire Wire Line
-	8950 2100 8950 2500
+	8950 2100 8950 2400
 $Comp
 L power:+3.3V #PWR023
 U 1 1 5A973CBC
@@ -486,28 +486,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 5550 8550 5650
 Connection ~ 8550 5650
-$Comp
-L ucan:conn:Conn_01x04 J6
-U 1 1 5AD900C4
-P 3550 4750
-F 0 "J6" H 3500 4450 50  0000 C CNN
-F 1 "conn:Conn_01x04" H 3470 4416 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.27mm" H 3550 4750 50  0001 C CNN
-F 3 "" H 3550 4750 50  0001 C CNN
-	1    3550 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L ucan:conn:Conn_01x04 J2
-U 1 1 5AD90864
-P 3450 4650
-F 0 "J2" H 3400 4850 50  0000 L CNN
-F 1 "conn:Conn_01x04" H 3370 4316 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.27mm" H 3450 4650 50  0001 C CNN
-F 3 "" H 3450 4650 50  0001 C CNN
-	1    3450 4650
-	1    0    0    -1  
-$EndComp
 Text Notes 3450 4400 0    50   ~ 0
 I2C
 Wire Wire Line
@@ -556,24 +534,14 @@ ICSPCLK
 $Comp
 L power:GND #PWR025
 U 1 1 5AD9677A
-P 3750 4850
-F 0 "#PWR025" H 3750 4600 50  0001 C CNN
-F 1 "GND" V 3750 4750 50  0000 R CNN
-F 2 "" H 3750 4850 50  0001 C CNN
-F 3 "" H 3750 4850 50  0001 C CNN
-	1    3750 4850
+P 3800 4850
+F 0 "#PWR025" H 3800 4600 50  0001 C CNN
+F 1 "GND" V 3800 4750 50  0000 R CNN
+F 2 "" H 3800 4850 50  0001 C CNN
+F 3 "" H 3800 4850 50  0001 C CNN
+	1    3800 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 4850 3250 4850
-Connection ~ 3750 4850
-Wire Wire Line
-	3250 4750 3750 4750
-Wire Wire Line
-	3750 4650 3250 4650
-Wire Wire Line
-	3250 4550 3750 4550
-Connection ~ 3250 4850
 $Comp
 L power:GND #PWR026
 U 1 1 5AD99355
@@ -585,11 +553,11 @@ F 3 "" H 3250 4850 50  0001 C CNN
 	1    3250 4850
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4050 0    50   Input ~ 0
+Text GLabel 4150 3950 0    50   Input ~ 0
 LIN_TX
 Text GLabel 9900 5650 2    50   Input ~ 0
 LIN_TX
-Text GLabel 3750 3950 0    50   Input ~ 0
+Text GLabel 3750 4050 0    50   Input ~ 0
 LIN_RX
 Text GLabel 9900 5750 2    50   Input ~ 0
 LIN_RX
@@ -606,7 +574,7 @@ L ucan:PIC16(L)F15323 U4
 U 1 1 5AD9A027
 P 4650 4300
 F 0 "U4" H 4750 5065 50  0000 C CNN
-F 1 "PIC16(L)F15323" H 4750 4974 50  0000 C CNN
+F 1 "PIC16(L)F15323/PIC16(L)F15325" H 5000 4950 50  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 4650 4300 50  0001 C CNN
 F 3 "" H 4650 4300 50  0001 C CNN
 	1    4650 4300
@@ -652,32 +620,15 @@ Connection ~ 3900 4150
 Wire Wire Line
 	3900 4150 4150 4150
 Wire Wire Line
-	4150 4250 3950 4250
-Wire Wire Line
-	3950 4250 3950 4550
-Wire Wire Line
-	4150 4350 4000 4350
-Wire Wire Line
-	4000 4350 4000 4650
-Wire Wire Line
 	4050 4450 4050 4750
 Wire Wire Line
 	4050 4450 4150 4450
-Wire Wire Line
-	3950 4550 3750 4550
-Connection ~ 3750 4550
-Wire Wire Line
-	3750 4650 4000 4650
-Connection ~ 3750 4650
-Wire Wire Line
-	3750 4750 4050 4750
-Connection ~ 3750 4750
 $Comp
 L ucan:TLE493D U1
 U 1 1 5ADC9A4F
 P 1750 4700
 F 0 "U1" H 1850 5115 50  0000 C CNN
-F 1 "TLE493D" H 1850 5024 50  0000 C CNN
+F 1 "TLE493D/TLV493" H 1850 5024 50  0000 C CNN
 F 2 "Housings_SSOP:TSOP-6_1.65x3.05mm_Pitch0.95mm" H 1750 4700 50  0001 C CNN
 F 3 "" H 1750 4700 50  0001 C CNN
 	1    1750 4700
@@ -714,9 +665,9 @@ Text GLabel 2400 4550 2    50   Input ~ 0
 I2C_SDA
 Text GLabel 1300 4550 0    50   Input ~ 0
 I2C_SCL
-Text GLabel 3250 4650 0    50   Input ~ 0
-I2C_SCL
 Text GLabel 3250 4550 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 3250 4650 0    50   Input ~ 0
 I2C_SDA
 $Comp
 L device:R_Small R5
@@ -761,7 +712,6 @@ F 3 "" H 3250 4750 50  0001 C CNN
 	1    3250 4750
 	0    -1   -1   0   
 $EndComp
-Connection ~ 3250 4750
 $Comp
 L power:+3.3V #PWR031
 U 1 1 5ADE7D77
@@ -908,28 +858,28 @@ $EndComp
 $Comp
 L device:R_Small R7
 U 1 1 5ADF1321
-P 3800 3850
-F 0 "R7" H 3700 3750 50  0000 C CNN
-F 1 "10k" H 3650 3850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 3800 3850 50  0001 C CNN
-F 3 "" H 3800 3850 50  0001 C CNN
-	1    3800 3850
+P 3800 3950
+F 0 "R7" H 3900 3850 50  0000 C CNN
+F 1 "10k" H 3950 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 3800 3950 50  0001 C CNN
+F 3 "" H 3800 3950 50  0001 C CNN
+	1    3800 3950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3750 3950 3800 3950
-Connection ~ 3800 3950
+	3750 4050 3800 4050
+Connection ~ 3800 4050
 Wire Wire Line
-	3800 3950 4150 3950
+	3800 4050 4150 4050
 $Comp
 L power:+3.3V #PWR039
 U 1 1 5ADF322C
-P 3800 3750
-F 0 "#PWR039" H 3800 3600 50  0001 C CNN
-F 1 "+3.3V" V 3815 3878 50  0000 L CNN
-F 2 "" H 3800 3750 50  0001 C CNN
-F 3 "" H 3800 3750 50  0001 C CNN
-	1    3800 3750
+P 3800 3850
+F 0 "#PWR039" H 3800 3700 50  0001 C CNN
+F 1 "+3.3V" V 3815 3978 50  0000 L CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "" H 3800 3850 50  0001 C CNN
+	1    3800 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -947,4 +897,118 @@ F 3 "" H 6200 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 4200 6550 4200
+$Comp
+L conn:Conn_01x04 J6
+U 1 1 5ADA1734
+P 3500 4650
+F 0 "J6" H 3400 4850 50  0000 L CNN
+F 1 "Conn_01x04" H 3580 4551 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.27mm" H 3500 4650 50  0001 C CNN
+F 3 "~" H 3500 4650 50  0001 C CNN
+	1    3500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4550 3300 4550
+Wire Wire Line
+	3250 4650 3300 4650
+Wire Wire Line
+	3250 4750 3300 4750
+Wire Wire Line
+	3250 4850 3300 4850
+Connection ~ 3300 4550
+Connection ~ 3300 4650
+Connection ~ 3300 4750
+Connection ~ 3300 4850
+$Comp
+L conn:Conn_01x04 J2
+U 1 1 5ADA1A76
+P 3600 4750
+F 0 "J2" H 3600 4450 50  0000 C CNN
+F 1 "Conn_01x04" H 3520 4416 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch1.27mm" H 3600 4750 50  0001 C CNN
+F 3 "~" H 3600 4750 50  0001 C CNN
+	1    3600 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 4550 3800 4550
+Wire Wire Line
+	3300 4650 3800 4650
+Wire Wire Line
+	3300 4750 3800 4750
+Wire Wire Line
+	3300 4850 3800 4850
+Connection ~ 3800 4850
+Connection ~ 3800 4750
+Wire Wire Line
+	3800 4750 4050 4750
+Connection ~ 3800 4650
+Wire Wire Line
+	3800 4650 4000 4650
+Connection ~ 3800 4550
+Wire Wire Line
+	3800 4550 3950 4550
+Wire Wire Line
+	4000 4250 4150 4250
+Wire Wire Line
+	4000 4250 4000 4650
+Wire Wire Line
+	4150 4350 3950 4350
+Wire Wire Line
+	3950 4350 3950 4550
+$Comp
+L conn:Conn_01x09 J5
+U 1 1 5ADBAE4D
+P 10650 2400
+F 0 "J5" H 10730 2442 50  0000 L CNN
+F 1 "Conn_01x09" H 10730 2351 50  0000 L CNN
+F 2 "" H 10650 2400 50  0001 C CNN
+F 3 "~" H 10650 2400 50  0001 C CNN
+	1    10650 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 2800 0    50   Input ~ 0
+DRV_SLEEP
+$Comp
+L power:GND #PWR013
+U 1 1 5ADBB208
+P 10450 2000
+F 0 "#PWR013" H 10450 1750 50  0001 C CNN
+F 1 "GND" H 10455 1827 50  0000 C CNN
+F 2 "" H 10450 2000 50  0001 C CNN
+F 3 "" H 10450 2000 50  0001 C CNN
+	1    10450 2000
+	-1   0    0    1   
+$EndComp
+Text Label 10450 2200 2    50   ~ 0
+DRV_B2
+Text Label 10450 2100 2    50   ~ 0
+DRV_B1
+Text GLabel 9150 2400 2    50   Input ~ 0
+DRV_PIN_V
+Connection ~ 8950 2400
+Wire Wire Line
+	8950 2400 8950 2500
+Wire Wire Line
+	8950 2400 9150 2400
+Text GLabel 10450 2300 0    50   Input ~ 0
+DRV_PIN_V
+$Comp
+L power:+12P #PWR040
+U 1 1 5ADBF64D
+P 10450 2400
+F 0 "#PWR040" H 10450 2250 50  0001 C CNN
+F 1 "+12P" V 10450 2550 50  0000 L CNN
+F 2 "" H 10450 2400 50  0001 C CNN
+F 3 "" H 10450 2400 50  0001 C CNN
+	1    10450 2400
+	0    -1   -1   0   
+$EndComp
+Text Label 10450 2500 2    50   ~ 0
+DRV_A2
+Text Label 10450 2600 2    50   ~ 0
+DRV_A1
+Text GLabel 10450 2700 0    50   Input ~ 0
+DRV_FAULT
 $EndSCHEMATC
