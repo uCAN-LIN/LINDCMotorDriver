@@ -39,6 +39,8 @@
 */
 
 #include "lin_app.h"
+#include "./../mcc.h"
+
 
 void LIN_Slave_Initialize(void){
 
@@ -56,8 +58,8 @@ void processLIN(void){
         case M_CTR_1:
             cnt ++;
             M_STAT_1_Data[0] = cnt;
-            M_STAT_1_Data[1] = tempRxData[1];
-            M_STAT_1_Data[2] = tempRxData[2];
+            PWM3_LoadDutyValue(tempRxData[0] * 4);
+            M_STAT_1_Data[1] = tempRxData[0];            
             break;
         case M_STAT_1:
             break;

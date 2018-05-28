@@ -39,7 +39,6 @@
 
 #include "lin_slave.h"
 #include "lin_hardware.h"
-#include "pic16f15325.h"
 
 #define READ_TIMEOUT    15  //ms
 
@@ -168,7 +167,6 @@ lin_rx_state_t LIN_handler(void){
             }
             break;
         case LIN_RX_TX_DATA:
-            
             LIN_queuePacket(LIN_packet.PID); //Send response automatically
             LIN_rxState = LIN_RX_RDY;
         case LIN_RX_RDY:
@@ -190,8 +188,9 @@ lin_rx_state_t LIN_handler(void){
     return LIN_rxState;
 }
 
-void LIN_sendPacket(uint8_t length, uint8_t pid, uint8_t* data){  
- 
+void LIN_sendPacket(uint8_t length, uint8_t pid, uint8_t* data){
+
+    //Write data    
     for(uint8_t i = 0; i < length; i++){
         LIN_EUSART_Write(*(data + i));
     }

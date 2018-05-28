@@ -51,6 +51,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
+#include "pwm3.h"
+#include "tmr2.h"
 #include "tmr0.h"
 #include "eusart1.h"
 #include "LINDrivers/lin_app.h"

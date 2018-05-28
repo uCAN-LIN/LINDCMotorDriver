@@ -51,9 +51,12 @@ void main(void)
     SYSTEM_Initialize();
     INTERRUPT_GlobalInterruptEnable();
     INTERRUPT_PeripheralInterruptEnable();    
-    
+
+    TMR2_StartTimer();
+
     while (1)
     {
+        
         LIN_handler();
         // Add your application code
     }

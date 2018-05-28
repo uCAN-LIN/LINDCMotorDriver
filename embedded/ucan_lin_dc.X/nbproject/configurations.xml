@@ -15,6 +15,8 @@
         <itemPath>mcc_generated_files/LINDrivers/lin_app.h</itemPath>
         <itemPath>mcc_generated_files/LINDrivers/lin_hardware.h</itemPath>
         <itemPath>mcc_generated_files/pin_manager.h</itemPath>
+        <itemPath>mcc_generated_files/pwm3.h</itemPath>
+        <itemPath>mcc_generated_files/tmr2.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -35,6 +37,8 @@
         <itemPath>mcc_generated_files/LINDrivers/lin_slave.c</itemPath>
         <itemPath>mcc_generated_files/LINDrivers/lin_app.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
+        <itemPath>mcc_generated_files/pwm3.c</itemPath>
+        <itemPath>mcc_generated_files/tmr2.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
